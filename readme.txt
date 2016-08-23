@@ -67,7 +67,7 @@ There are currently three filter actions that you may hook into:
 `rapidfire_after_result` This allows you to add custom markup to the bottom of the quiz results area at the end of the quiz (you would likely output data from your custom `rapidfire_admin_options` here).
 
 For an example of how to utilize these hooks, see this
-[gist](https://gist.github.com/jewlofthelotus/9022902).
+[gist](https://gist.github.com/patilswapnilv/f2a7c9721f8aa1060afa2c3321559e71).
 
 = Saving Additional Quiz Data =
 
