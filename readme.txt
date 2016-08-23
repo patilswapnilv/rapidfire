@@ -153,7 +153,7 @@ Nope, things will break.  This might happen if you place the same quiz within mu
 
 Checkout the [RapidFire WordPress Support forum](http://wordpress.org/support/plugin/rapidfire/) to see if someone else has experienced your issue, the answer might already be there; if not - please create a new support ticket!
 
-Also, see the [RapidFire Issues](https://github.com/jewlofthelotus/RapidFire-WordPress/issues) page on Github for a complete list of upcoming features and bug fixes, and feel free to add your own ideas!
+Also, see the [RapidFire Issues](https://github.com/patilswapnilv/rapidfire/issues) page on Github for a complete list of upcoming features and bug fixes, and feel free to add your own ideas!
 
 
 == Screenshots ==
