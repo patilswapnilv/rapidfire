@@ -1,0 +1,323 @@
+.rapidFire .hidden {
+    display: none;
+}
+.rapidFire .floatLeft {
+    float: left;
+}
+.rapidFire .floatRight {
+    float: right;
+}
+
+/* QUIZ LIST */
+.rapidFire .table_actions {
+    text-align: right;
+}
+
+.rapidFire .readOnly {
+    text-align: center;
+    color: #cc9100;
+    border: 2px dashed;
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px 0;
+    background: lightYellow;
+    font-weight: bold;
+}
+
+/* NEW / EDIT Pages */
+.rapidFire .statusLegend {
+    font-size: 20px;
+    color: #555;
+}
+.rapidFire .required {
+    margin: 20px 0 40px;
+}
+
+.rapidFire .quizFormWrapper {
+    clear: both;
+    margin: 0 10px 20px;
+}
+.rapidFire .quizFormWrapper a {
+    text-decoration: none;
+}
+.rapidFire .quizFormWrapper dl {
+    margin-bottom: 0;
+}
+.rapidFire .quizFormWrapper .error {
+    margin: 0;
+    padding: 2px 0 0;
+    background: none;
+    border: none;
+    text-align: left;
+    color: #b5121b;
+}
+.rapidFire .quizFormWrapper input.error,
+.rapidFire .quizFormWrapper textarea.error {
+    background: #FEE4DC;
+}
+.rapidFire .quizFormWrapper .correctAnswer,
+.rapidFire .quizFormWrapper .twoAnswers {
+    margin-bottom: 20px;
+}
+.rapidFire .quizFormWrapper .oneQuestion {
+    margin: 20px 7%;
+}
+.rapidFire .quizFormWrapper form {
+    margin-top: 0;
+}
+.rapidFire .quizFormWrapper legend {
+    display: none;
+}
+.rapidFire .quizFormWrapper .question {
+    padding: 0 0 20px 0;
+}
+
+.rapidFire .quizFormWrapper .question label {
+    display: block;
+}
+.rapidFire .quizFormWrapper .selectAny label,
+.rapidFire .quizFormWrapper .forceCheckbox label {
+    display: inline-block;
+}
+
+.rapidFire .quizFormWrapper input[type=text],
+.rapidFire .quizFormWrapper textarea {
+    width: 100%;
+}
+.rapidFire .quizFormWrapper textarea {
+    height: 100px;
+}
+
+.rapidFire .quizFormWrapper .questionSet {
+    margin: 30px 0 0;
+    padding: 20px 0 0 20px;
+    border: 1px solid #689CBD;
+    background: #eef3f6;
+}
+
+.rapidFire .quizFormWrapper .questionSetOptions {
+    float: right;
+    padding: 0;
+    margin: -10px 20px 0 0;
+    text-align: right;
+    font-size: 11px;
+}
+
+.rapidFire .quizFormWrapper .questionSet input[type=text],
+.rapidFire .quizFormWrapper .questionSet textarea {
+    width: 98% !important;
+}
+.rapidFire .quizFormWrapper .questionSet textarea {
+    height: 50px;
+}
+
+.rapidFire .quizFormWrapper .answer input[type=text] {
+    width: 72% !important;
+    font-size: 18px !important;
+}
+
+.rapidFire .quizFormWrapper .answer .correctAnswer {
+    display: inline;
+}
+
+.rapidFire .quizFormWrapper .question .main {
+    display: block;
+    margin-bottom: 5px;
+}
+.rapidFire .quizFormWrapper .question .main + small {
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.rapidFire .top_button_bar {
+    text-align: right;
+    padding: 9px 0 4px 0;
+    line-height: 30px;
+    width: 420px;
+}
+.rapidFire .bottom_button_bar {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.rapidFire .bottom_button_bar .button {
+    float: right;
+    margin-left: 20px;
+}
+.rapidFire .bottom_button_bar .previewNote {
+    clear: right;
+    float: right;
+    margin: 10px 0 0 0;
+}
+
+
+/* ADD LINKS */
+.rapidFire .addQuestion {
+    float: left;
+    margin: 20px 0 0 0;
+}
+.rapidFire .addAnswer {
+    margin: 0 0 20px 0;
+    font-size: 11px;
+}
+
+.rapidFire .toggleSets {
+    clear: right;
+    float: right;
+    text-align: right;
+    margin: 20px 20px 0 0;
+    font-size: 12px;
+}
+.rapidFire .toggleSets.top {
+    margin-top: 0;
+}
+.rapidFire .addQuestion a,
+.rapidFire .addAnswer a,
+.rapidFire .toggleSets a {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Preview Pane */
+#preview .quizName {
+    padding: 20px 0 10px;
+}
+#preview h3 {
+    color: #0c4569;
+}
+
+#preview .previewNote {
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+
+#preview .top_button_bar {
+    width: 97%;
+}
+
+#preview .questions .question,
+#preview .questions .question .responses,
+#preview .questions .question .responses .correct,
+#preview .questions .question .responses .incorrect,
+#preview .quizResults {
+    display: none;
+}
+
+#preview ol,
+#preview ul,
+#preview li {
+    list-style-type: none;
+}
+#preview .question {
+    margin-top: 20px;
+}
+
+#preview .answers {
+    margin: 10px 0;
+    padding: 0;
+}
+#preview .answers li {
+    margin: 0;
+    padding: 0 0 0 5px;
+    line-height: 1.5em;
+}
+
+#preview .responses {
+    margin: 10px 0;
+    padding: 0;
+}
+#preview .responses li {
+    margin: 0;
+    padding: 0;
+}
+#preview .responses li span {
+    display: block;
+    color: #b5121b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#preview .question.correctResponse .responses li span {
+    color: #6c9f2e;
+}
+
+#preview .quizResults p {
+    margin: 10px 0;
+}
+
+#preview .bottom_button_bar {
+    margin-top: 60px;
+}
+.rapidFire .button img {
+    vertical-align: text-top;
+}
+
+/* BUTTONS */
+.rapidFire .buttonGreen {
+    width: 200px;
+    margin-top: 10px;
+    color: #fff;
+    background: #598920;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 10px 30px 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.rapidFire .buttonGreen:hover {
+    color: #fff !important;
+    background: #427108;
+    text-decoration: none;
+}
+.rapidFire .buttonGreen:visited {
+    color: #fff !important;
+}
+
+.rapidFire .buttonWrapper {
+    margin-top: 30px;
+}
+
+.rapidFireWrapper .startQuiz {
+    display: none;
+}
+.rapidFireWrapper .backToQuestion,
+.rapidFireWrapper .nextQuestion {
+    display: none;
+    float: left;
+    width: 100px;
+    margin-bottom: 40px;
+}
+.rapidFireWrapper .checkAnswer {
+    float: left;
+    width: 180px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+.rapidFireWrapper .desc {
+    color: #aaa;
+    font-size: .9em;
+    margin: .25em 0;
+}
+
+/* Results & Conversion Features */
+.rapidFire .quizResultsCopy h3 {
+    border-bottom: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.rapidFire .quizResultsCopy h3 span,
+.rapidFire .quizResultsCopy .quizLevel {
+    font-style: italic;
+}
+.rapidFire .quizResultsCopy h4 {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #0C4569;
+}
