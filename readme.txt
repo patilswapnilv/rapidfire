@@ -1,16 +1,14 @@
 === RapidFire ===
 Contributors: patilswapnilv, shefalishirodkar20
 Plugin Name: RapidFire
-Plugin URI:
+Plugin URI: https://github.com/patilswapnilv/rapidfire
 Tags: quiz, test, jquery, javascript, education, elearning, generator, manager, question, answer, score, rank
-Author URI: http://swapnilpatil.in
-Author: patilswapnilv
+Author URI: http://swapnilpatil.in/
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl.html
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 1.3.7.1
-
+Tested up to: 4.6
+Stable tag: 1.0
 
 RapidFire is a plugin for displaying and managing pretty, dynamic quizzes. It uses the RapidFire jQuery plugin.
 
@@ -69,7 +67,7 @@ There are currently three filter actions that you may hook into:
 `rapidfire_after_result` This allows you to add custom markup to the bottom of the quiz results area at the end of the quiz (you would likely output data from your custom `rapidfire_admin_options` here).
 
 For an example of how to utilize these hooks, see this
-[gist](https://gist.github.com/jewlofthelotus/9022902).
+[gist](https://gist.github.com/patilswapnilv/f2a7c9721f8aa1060afa2c3321559e71).
 
 = Saving Additional Quiz Data =
 
@@ -155,7 +153,7 @@ Nope, things will break.  This might happen if you place the same quiz within mu
 
 Checkout the [RapidFire WordPress Support forum](http://wordpress.org/support/plugin/rapidfire/) to see if someone else has experienced your issue, the answer might already be there; if not - please create a new support ticket!
 
-Also, see the [RapidFire Issues](https://github.com/jewlofthelotus/RapidFire-WordPress/issues) page on Github for a complete list of upcoming features and bug fixes, and feel free to add your own ideas!
+Also, see the [RapidFire Issues](https://github.com/patilswapnilv/rapidfire/issues) page on Github for a complete list of upcoming features and bug fixes, and feel free to add your own ideas!
 
 
 == Screenshots ==
@@ -183,373 +181,11 @@ Just the make sure the values are replaces with the default once.
 
 == Changelog ==
 
-= 1.3.7.1 =
-* Confirmed WordPress 4.1 compatibility
-
-= 1.3.7 =
-* NEW option to disable WordPress filters on RapidFire content areas
-* NEW added WordPress filter setup to quiz preview
-
-= 1.3.6.1 =
-* BUG FIX: Answer toggling should not animate
-* BUG FIX: When "Display score as percentage", ranking should still work
-
-= 1.3.6 =
-* NEW: applies WordPress filters to quiz fields - allowing for shortcodes in quiz content!! Thanks [@nfreear](https://github.com/nfreear)!
-* BUG FIX: no more flash of correct answers when validating!
-* BUG FIX: "Quiz:" accessibility label is now properly hidden
-* BUG FIX: answer inputs are now tied directly to the quiz, allowing for radio button answer selection across multiple active quizzes
-* BUG FIX: removed conditional script loading since it's difficult to predict where quizzes will be loaded, this should fix A LOT of "quiz not working" issues.
-
-= 1.3.5 =
-* NEW option to display score as percentage
-* NEW option to adjust score formatting
-* NEW option to adjust current question label
-* NEW option to adjust question formatting
-* BUG FIX: hides "Quiz: " prefix from question name
-
-= 1.3.4 =
-* NEW option to customize the text of the final button before displaying results
-* BUG FIX: disables answer inputs when displayed with response messaging (thanks @mirgcire!)
-* BUG FIX: fixes some toggling issues when using the "Back" button while "Also display answer options" is enabled
-* Added documentation around Facebook share customizations and styling issues
-
-= 1.3.3 =
-* NEW option for questions with single answers - force the answers to use checkboxes to obscure the fact that there is only one answer from the user.
-* NEW option to display answer options along with response messaging after each question.
-* NEW option to prevent the score from displaying with the results.
-* NEW option to prevent the ranking level from displaying with the results (also makes ranking levels optional in quiz forms).
-* Adjusted how email saving works: if score saving is enabled and a user is logged in, an email will always be saved for them (regardless of whether or not there is a value in the Email field is set to display.)
-
-= 1.3.2 =
-* NEW developer methods for saving extra data along with the quiz via JavaScript and WordPress. See [Installation](http://wordpress.org/plugins/rapidfire/installation/) for more details. Thanks to [@nfreear](https://github.com/nfreear) for the contribution!
-
-= 1.3.1 =
-* SECURITY FIX!! Updating a few queries to prevent SQL injection.
-
-= 1.3 =
-* NEW option to toggle question count ("Question x of X") on and off.
-* NEW option to toggle question number (the "1." in "1. What is the first question?") on and off. Thanks to [@PhilKershaw](https://github.com/PhilKershaw)
-* Thanks to [@nfreear](https://github.com/nfreear) - you can now tell RapidFire to dynamically render a quiz based off an ID in the URL via `[rapidfire id=url]`
-* New logo!!
-
-= 1.2.373 =
-* BUG FIX: Some users experienced issues with the Score Widget not sorting the rankings properly. This resolves that issue. Thanks to [@Ciao121](http://wordpress.org/support/profile/ciao121) for suggesting a fix!
-* Updating RapidFire jQuery lib
-
-= 1.2.372 =
-* BUG FIX: Some users experienced issues with the Score and Ranking values missing form share verbiage. This resolves that issue.
-
-= 1.2.371 =
-* BUG FIX: Some users experienced issues with the "Start" button not enabling after entering their name in the input for storage. This resolves that issue.
-
-= 1.2.37 =
-* Added the ability to delete saved scores.
-* NEW option to save email addresses with scores.
-
-= 1.2.36 =
-* Improved sharing buttons - now more stylistically customizable, facebook includes score and quiz information
-* "Email" button has been added to sharing buttons!
-* New developer hooks! See [Installation](http://wordpress.org/plugins/rapidfire/installation/) for more details. Thanks to [@phh](https://github.com/phh) for the contribution!
-* Increasing admin style specificity to avoid clashing with WP and other plugins
-* Standardized notification message styles
-
-= 1.2.35 =
-* Fixes readme syntax issues
-* Bug fix: resolved escaped apostrophe issue in option page inputs
-
-= 1.2.34 =
-* Added Share button to Facebook Like button
-* REMOVES single option to randomly sort questions and answers, instead you should use the individual "randomly sort questions" and "randomly sort answers" options.
-* Made "Back" button styles less prominent to avoid confusion
-* Added some cursor styles to checkboxes, radios, and labels to make them more user friendly
-* Bug fix: unpublishing works again!
-* Updated readme / FAQ documentation
-
-= 1.2.33 =
-* Made the "Preview" step optional when saving quizzes
-* Added separate "Save Draft" and "Publish" options to simplify publishing
-
-= 1.2.32 =
-* Separate options to display per question response messages (enabled by default) and completion response messaging
-* REMOVES single option to disable response messages entirely, instead you should disable both per question and completion response message options
-* Added new option for questions with multiple answers - considers the selection of any single correct answer from the set of correct answers a valid response
-* Attempts to eliminate some unnecessary styles that might conflict with your theme
-* Adds some helpful form input descriptions
-* Updated plugin screenshots
-* Bug fix: prevents critical buttons from disappearing in preview window when certain quiz settings are enabled
-
-= 1.2.21 =
-* Bug fix: start button wasn't getting enabled due to an order of operations issue
-
-= 1.2.2 =
-* Bug fix: adding disabled button check to on quizStarter.on() event
-
-= 1.2.1 =
-* Bug fix: changed PHP short tag to long form which would break things on servers without short tags enabled
-
-= 1.2.0 =
-* NEW Top 10 Scores widget!
-* Automatically save user names for logged in users if score saving is enabled
-* Updating the RapidFire jQuery plugin
-
-= 1.1.8 =
-* Added "Skip Start Button" option (loads first question instead of start button)
-* Added "Number of Questions" option (loads the specified number of questions, instead of all questions)
-
-= 1.1.7 =
-* Added "Try Again" option to end of quiz (resets and restarts quiz)
-* Bug fixes, code cleanup - YAY!
-
-= 1.1.6 =
-* Updating the RapidFire jQuery plugin to commit d9213bf14be5ac216e8d622bc8a5c9376e035782
-* Resolved bug with HTML entities and tags in answers
-* Resolved bug with ranking level calculation
-
-= 1.1.5 =
-* Updating the RapidFire jQuery plugin to commit 661e8fcd9d5fe47bf4d28cb4080ae9a724827bc3
-* Resolved mobile bug where buttons weren't clickable
-* Resolved "Quiz not found" warning bug
-
-= 1.1.4 =
-* Added optional Twitter and Facebook sharing buttons to quiz results
-* Changed Question input to a textarea for easier form editing
-
-= 1.1.3 =
-* Tweaking user permissions - Admins can do everything; Editors can do everything EXCEPT manage RapidFire Options; Authors can view the quiz list, scores and previews.
-* RapidFire is now opensource - contribute on [Github](https://github.com/QuickenLoans/RapidFire-WordPress)!
-
-= 1.1.2 =
-* Bug fix: resolved issue with quizzes not working when they are the only thing in the post / page
-
-= 1.1.1 =
-* Bug fix: resolved issue with user scores not saving for logged out users
-
-= 1.1.0 =
-* Added NEW option to enable the saving of user scores!!
-* Added NEW option to customizable the user's name label when score saving is enabled
-
-= 1.0.19 =
-* Bug fix: resolved issue with fuzzy URL matching in the admin interface
-
-= 1.0.18 =
-* Bug fix: resolved issue with Safari not being able to open the quiz preview pane
-
-= 1.0.17 =
-* Added NEW option to hide all correct and incorrect response messages until the quiz is completed
-* Added NEW option to hide all correct and incorrect response messages entirely
-* Added class to quizLevel header for easier styling
-* Bug fixes: variable declarations for IE, jQuery Mobile compatibility
-
-= 1.0.16 =
-* Adding random sort ONLY questions / ONLY answers options
-* Resolved styling issue with answer labels
-* Resolved a secret BUG that prevented multiple quizzes on the same page
-
-= 1.0.15 =
-* Cleaning up options page
-* Added option to prevent submitting a question with no answers selected
-
-= 1.0.14 =
-* Resolving issue where IE thought every answer was wrong (BUG FIX!)
-
-= 1.0.13 =
-* Added hasOwnProperty method to jQuery for...in loops to resolve issues with prototype modifications (BUG FIX!)
-
-= 1.0.12 =
-* Adjusted selectors to work with themes and plugins that modify the quiz layout
-
-= 1.0.1 =
-* Updating the RapidFire jQuery plugin to commit 93a16427269df6f80215b02b44a9a1ddfd1d94b8.
-* Includes: Optional "Back" buttons
-* Includes: Optional randomly sorted questions and answers
-* Includes: Easier answer selection (you can now click the text to select the checkbox / radio button)
-* Bug fixes!
-
 = 1.0 =
 This is the initial setup of the plugin.
 
 
 == Upgrade Notice ==
-
-= 1.3.7.1 =
-* Confirmed WordPress 4.1 compatibility
-
-= 1.3.7 =
-* NEW option to disable WordPress filters on RapidFire content areas
-* NEW added WordPress filter setup to quiz preview
-
-= 1.3.6.1 =
-* BUG FIX: Answer toggling should not animate
-* BUG FIX: When "Display score as percentage", ranking should still work
-
-= 1.3.6 =
-* NEW: applies WordPress filters to quiz fields - allowing for shortcodes in quiz content!! Thanks [@nfreear](https://github.com/nfreear)!
-* BUG FIX: no more flash of correct answers when validating!
-* BUG FIX: "Quiz:" accessibility label is now properly hidden
-* BUG FIX: answer inputs are now tied directly to the quiz, allowing for radio button answer selection across multiple active quizzes
-* BUG FIX: removed conditional script loading since it's difficult to predict where quizzes will be loaded, this should fix A LOT of "quiz not working" issues.
-
-= 1.3.5 =
-* NEW option to display score as percentage
-* NEW option to adjust score formatting
-* NEW option to adjust current question label
-* NEW option to adjust question formatting
-* BUG FIX: hides "Quiz: " prefix from question name
-
-= 1.3.4 =
-* NEW option to customize the text of the final button before displaying results
-* BUG FIX: disables answer inputs when displayed with response messaging (thanks @mirgcire!)
-* BUG FIX: fixes some toggling issues when using the "Back" button while "Also display answer options" is enabled
-* Added documentation around Facebook share customizations and styling issues
-
-= 1.3.3 =
-* NEW option for questions with single answers - force the answers to use checkboxes to obscure the fact that there is only one answer from the user.
-* NEW option to display answer options along with response messaging after each question.
-* NEW option to prevent the score from displaying with the results.
-* NEW option to prevent the ranking level from displaying with the results (also makes ranking levels optional in quiz forms).
-* Adjusted how email saving works: if score saving is enabled and a user is logged in, an email will always be saved for them (regardless of whether or not there is a value in the Email field is set to display.)
-
-= 1.3.2 =
-* NEW developer methods for saving extra data along with the quiz via JavaScript and WordPress. See [Installation](http://wordpress.org/plugins/rapidfire/installation/) for more details. Thanks to [@nfreear](https://github.com/nfreear) for the contribution!
-
-= 1.3.1 =
-* SECURITY FIX!! Updating a few queries to prevent SQL injection.
-
-= 1.3 =
-* NEW option to toggle question count ("Question x of X") on and off.
-* NEW option to toggle question number (the "1." in "1. What is the first question?") on and off. Thanks to [@PhilKershaw](https://github.com/PhilKershaw)
-* Thanks to [@nfreear](https://github.com/nfreear) - you can now tell RapidFire to dynamically render a quiz based off an ID in the URL via `[rapidfire id=url]`
-* New logo!!
-
-= 1.2.373 =
-* BUG FIX: Some users experienced issues with the Score Widget not sorting the rankings properly. This resolves that issue. Thanks to [@Ciao121](http://wordpress.org/support/profile/ciao121) for suggesting a fix!
-* Updating RapidFire jQuery lib
-
-= 1.2.372 =
-* BUG FIX: Some users experienced issues with the Score and Ranking values missing form share verbiage. This resolves that issue.
-
-= 1.2.371 =
-* BUG FIX: Some users experienced issues with the "Start" button not enabling after entering their name in the input for storage. This resolves that issue.
-
-= 1.2.37 =
-* Added the ability to delete saved scores.
-* NEW option to save email addresses with scores.
-
-= 1.2.36 =
-* Improved sharing buttons - now more stylistically customizable, facebook includes score and quiz information
-* "Email" button has been added to sharing buttons!
-* New developer hooks! See [Installation](http://wordpress.org/plugins/rapidfire/installation/) for more details. Thanks to [@phh](https://github.com/phh) for the contribution!
-* Increasing admin style specificity to avoid clashing with WP and other plugins
-* Standardized notification message styles
-
-= 1.2.35 =
-* Fixes readme syntax issues
-* Bug fix: resolved escaped apostrophe issue in option page inputs
-
-= 1.2.34 =
-* Added Share button to Facebook Like button
-* REMOVES single option to randomly sort questions and answers, instead you should use the individual "randomly sort questions" and "randomly sort answers" options.
-* Made "Back" button styles less prominent to avoid confusion
-* Added some cursor styles to checkboxes, radios, and labels to make them more user friendly
-* Bug fix: unpublishing works again!
-* Updated readme / FAQ documentation
-
-= 1.2.33 =
-* Made the "Preview" step optional when saving quizzes
-* Added separate "Save Draft" and "Publish" options to simplify publishing
-
-= 1.2.32 =
-* Separate options to display per question response messages (enabled by default) and completion response messaging
-* REMOVES single option to disable response messages entirely, instead you should disable both per question and completion response message options
-* Added new option for questions with multiple answers - considers the selection of any single correct answer from the set of correct answers a valid response
-* Attempts to eliminate some unnecessary styles that might conflict with your theme
-* Adds some helpful form input descriptions
-* Updated plugin screenshots
-* Bug fix: prevents critical buttons from disappearing in preview window when certain quiz settings are enabled
-
-= 1.2.21 =
-* Bug fix: start button wasn't getting enabled due to an order of operations issue
-
-= 1.2.2 =
-* Bug fix: adding disabled button check to on quizStarter.on() event
-
-= 1.2.1 =
-* Bug fix: changed PHP short tag to long form which would break things on servers without short tags enabled
-
-= 1.2.0 =
-* NEW Top 10 Scores widget!
-* Automatically save user names for logged in users if score saving is enabled
-* Updating the RapidFire jQuery plugin
-
-= 1.1.8 =
-* Added "Skip Start Button" option (loads first question instead of start button)
-* Added "Number of Questions" option (loads the specified number of questions, instead of all questions)
-
-= 1.1.7 =
-* Added "Try Again" option to end of quiz (resets and restarts quiz)
-* Bug fixes, code cleanup - YAY!
-
-= 1.1.6 =
-* Updating the RapidFire jQuery plugin to commit d9213bf14be5ac216e8d622bc8a5c9376e035782
-* Resolved bug with HTML entities and tags in answers
-* Resolved bug with ranking level calculation
-
-= 1.1.5 =
-* Updating the RapidFire jQuery plugin to commit 661e8fcd9d5fe47bf4d28cb4080ae9a724827bc3
-* Resolved mobile bug where buttons weren't clickable
-* Resolved "Quiz not found" warning bug
-
-= 1.1.4 =
-* Added optional Twitter and Facebook sharing buttons to quiz results
-* Changed Question input to a textarea for easier form editing
-
-= 1.1.3 =
-* Tweaking user permissions - Admins can do everything; Editors can do everything EXCEPT manage RapidFire Options; Authors can view the quiz list, scores and previews.
-* RapidFire is now opensource - contribute on [Github](https://github.com/QuickenLoans/RapidFire-WordPress)!
-
-= 1.1.2 =
-* Bug fix: resolved issue with quizzes not working when they are the only thing in the post / page
-
-= 1.1.1 =
-* Bug fix: resolved issue with user scores not saving for logged out users
-
-= 1.1.0 =
-* Added NEW option to enable the saving of user scores!!
-* Added NEW option to customizable the user's name label when score saving is enabled
-
-= 1.0.19 =
-* Bug fix: resolved issue with fuzzy URL matching in the admin interface
-
-= 1.0.18 =
-* Bug fix: resolved issue with Safari not being able to open the quiz preview pane
-
-= 1.0.17 =
-* Added NEW option to hide all correct and incorrect response messages until the quiz is completed
-* Added NEW option to hide all correct and incorrect response messages entirely
-* Added class to quizLevel header for easier styling
-* Bug fixes: variable declarations for IE, jQuery Mobile compatibility
-
-= 1.0.16 =
-* Adding random sort ONLY questions / ONLY answers options
-* Resolved styling issue with answer labels
-* Resolved a secret BUG that prevented multiple quizzes on the same page
-
-= 1.0.15 =
-* Cleaning up options page
-* Added option to prevent submitting a question with no answers selected
-
-= 1.0.14 =
-* Resolving issue where IE thought every answer was wrong (BUG FIX!)
-
-= 1.0.13 =
-* Added hasOwnProperty method to jQuery for...in loops to resolve issues with prototype modifications (BUG FIX!)
-
-= 1.0.12 =
-* Adjusted selectors to work with themes and plugins that modify the quiz layout
-
-= 1.0.1 =
-Updating the RapidFire jQuery plugin. New back button and random sorting options. Bug fixes!
 
 = 1.0 =
 This is the first version of the plugin
